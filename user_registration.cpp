@@ -8,8 +8,8 @@
 #include<conio.h>
 using namespace std;
 
-struct user_registration
-{
+// declaring the type of data structures
+struct user_registration {
     /* data */
     string first_name;
     string second_name;
@@ -19,13 +19,12 @@ struct user_registration
 };
 
 
-
 int qstate;
  
 
 int main()
 {
-   struct user_registration reg
+   struct user_registration reg;
 
        cout << "PLEASE ENTER YOUR FIRST NAME?" << endl;
         cin >> reg.first_name;
@@ -33,7 +32,7 @@ int main()
         cin >> reg.second_name;
         cout << "PLEAE ENTER YOUR EMAIL ?" << endl;
         cin >> reg.email;
-        cout << "pLEAESE ENTER PHONE NUMBER ?" << endl;
+        cout << "PLEAESE ENTER PHONE NUMBER ?" << endl;
         cin >> reg.phone_number;
    
    
@@ -51,7 +50,7 @@ int main()
         if (!qstate)
         {
             
-            string query = "INSERT INTO user_info(first_name,second_name,email,phone_number) VALUES ( '" + first_name + "','" + second_name + "','" + email + "','" + phone_number + "')";
+            string query = "INSERT INTO user_info(first_name,second_name,email,phone_number) VALUES ( '" + reg.first_name + "','" + reg.second_name + "','" + reg.email + "','" + reg.phone_number + "')";
             const char* q = query.c_str();
             qstate = mysql_query(conn, q);
             if (qstate != 0)
