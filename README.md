@@ -2,7 +2,7 @@
 m_boma housing project that allows tenants to finds their desired houses anywhere they wish to rent
 
 
-We would like to present our Project proposal for approval for the UNIT EEE202 which is about the housing management program.
+This is all about housing management system program;
 In the project we entail to create a program that;
 I.	Accepts user registration details mainly Name,Phone,Email and Password:- after registration is complete it…
 II.	Maps out the 47 counties for the user to navigate through but in our case, we will sample a few.i.e.
