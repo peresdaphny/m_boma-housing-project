@@ -6,13 +6,36 @@
 #include<string>
 #include<stdlib.h>
 #include<conio.h>
-
 using namespace std;
+
+struct user_registration
+{
+    /* data */
+    string first_name;
+    string second_name;
+    string email;
+    int phone_number;
+
+};
+
+
+
 int qstate;
  
 
 int main()
 {
+   struct user_registration reg
+
+       cout << "PLEASE ENTER YOUR FIRST NAME?" << endl;
+        cin >> reg.first_name;
+        cout << "PLEASE ENTER YOUR SECOND NAME?" << endl;
+        cin >> reg.second_name;
+        cout << "PLEAE ENTER YOUR EMAIL ?" << endl;
+        cin >> reg.email;
+        cout << "pLEAESE ENTER PHONE NUMBER ?" << endl;
+        cin >> reg.phone_number;
+   
    
     MYSQL* conn;
     MYSQL_ROW row;
@@ -23,18 +46,7 @@ int main()
     
     if (conn)
     { 
-        puts("successful connection to database !*");
-        string first_name, second_name, email, phone_number;
-       
-        cout << "PLEASE ENTER YOUR FIRST NAME?" << endl;
-        cin >> first_name;
-        cout << "PLEASE ENTER YOUR SECOND NAME?" << endl;
-        cin >> second_name;
-        cout << "PLEAE ENTER YOUR EMAIL ?" << endl;
-        cin >> email;
-        cout << "pLEAESE ENTER PHONE NUMBER ?" << endl;
-        cin >> phone_number;
-
+        puts("successful connection to database !*");       
       
         if (!qstate)
         {
