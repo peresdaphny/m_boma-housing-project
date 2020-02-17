@@ -107,7 +107,18 @@ INSERT INTO payment_details VALUES(401,300,"Bedsitters",1234683785,01010,0700345
 INSERT INTO payment_details VALUES(501,300,"Singles",0896945832,01234,0712597944);
 INSERT INTO payment_details VALUES(101,300,"Bungalow",0457781112,78641,0768664759);
 
-select *from rental_cost;
+SELECT *FROM rental_cost;
+
+
+DESCRIBE user_info;
+
+CREATE TABLE user_info(
+first_name VARCHAR(20),
+second_name VARCHAR(20),
+email VARCHAR(30),
+phone_number INT
+);
+
 
 
 
