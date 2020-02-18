@@ -8,25 +8,16 @@
 #include<string>
 #include "boma.h"
 
-
-
 /*
 #include<string>
 #include<iostream>
 
 */
 
-
 //#include "../../../Documents/GitHub/m_boma-housing-project/.vscode/boma.cpp"
 
 
 using namespace std;
-
-
-
-
-
-
 
 int qstate;
  
