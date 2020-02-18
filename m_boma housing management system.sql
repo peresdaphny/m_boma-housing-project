@@ -109,6 +109,8 @@ INSERT INTO payment_details VALUES(101,300,"Bungalow",0457781112,78641,076866475
 
 SELECT *FROM rental_cost;
 
+select * 
+from user_info;
 
 DESCRIBE user_info;
 
