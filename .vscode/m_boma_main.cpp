@@ -1,22 +1,15 @@
 // m_boma housing project.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-//#include "stdafx.h"
+
 #include<mysql.h>
 #include <iostream>
 #include<string>
 #include<stdlib.h>
 #include<conio.h>
+#include "m_boma.h"
 using namespace std;
 
-// declaring the type of data structures
-struct user_registration {
-    /* data */
-    string first_name;
-    string second_name;
-    string email;
-    int phone_number;
 
-};
 
 
 int qstate;
