@@ -1,9 +1,6 @@
+
 #ifndef M_BOMA.H
 #define M_BOMA.H
-
-#include<iostream>
-#include<string>
-
 
 // declaring the type of data structures
 struct user_registration {
