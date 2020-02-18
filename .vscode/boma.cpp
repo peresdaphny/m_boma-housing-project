@@ -23,3 +23,28 @@ void get_user_info( user_registration person) {
     cout << "Email: " << person.email << endl;
     cout << "Phone_number: " << person.phone_number;
 }
+
+
+void pin_verification(char pass[20],char password[20])
+{
+     int i=0;
+	while( i <3)
+    {
+
+
+	if(strcmp(pass, password)==0)
+	     {
+		cout<<"SUCCESFULYY LOGGED IN";
+		//for now but will define later
+        break;
+	     }
+	else
+	   {
+		cout<<"INCORRECT PASSWORD PLEASE TRY AGAIN";
+       }
+            i++;
+    }
+
+}
+
+

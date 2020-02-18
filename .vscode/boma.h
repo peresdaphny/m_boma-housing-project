@@ -7,3 +7,5 @@ struct user_registration {
 };
 
 void get_user_info(  user_registration );
+
+void pin_verification(char pass[20],char password[20]);

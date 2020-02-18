@@ -24,6 +24,9 @@ int qstate;
 
 int main()
 {
+    char pass[20];
+    char password[20];
+
       user_registration person;
 
     cout << "PLEASE ENTER YOUR FIRST NAME?" << endl;
@@ -35,7 +38,17 @@ int main()
     cout << "PLEAESE ENTER PHONE NUMBER ?" << endl;
     cin >> person.phone_number;
 
+    cout<<"PLease create new password To proceed"<<endl;
+    cin>>pass;
+    cout<<"PASSWORD SAVED!"<<endl;
+
+    cout<<"Please input password again to preoceed"<<endl;
+    cin>>password;
+    
+    pin_verification(pass,password);
+
     get_user_info(person);
+
 
    
    
