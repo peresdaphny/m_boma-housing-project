@@ -1,13 +1,29 @@
 // m_boma housing project.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include "boma.h"
 #include<mysql.h>
 #include <iostream>
-#include<string>
 #include<stdlib.h>
 #include<conio.h>
-#include "m_boma.h"
+#include<string>
+#include "boma.h"
+
+
+
+/*
+#include<string>
+#include<iostream>
+
+*/
+
+
+//#include "../../../Documents/GitHub/m_boma-housing-project/.vscode/boma.cpp"
+
+
 using namespace std;
+
+
+
 
 
 
@@ -17,16 +33,19 @@ int qstate;
 
 int main()
 {
-   struct user_registration reg;
+      user_registration person;
 
-       cout << "PLEASE ENTER YOUR FIRST NAME?" << endl;
-        cin >> reg.first_name;
-        cout << "PLEASE ENTER YOUR SECOND NAME?" << endl;
-        cin >> reg.second_name;
-        cout << "PLEAE ENTER YOUR EMAIL ?" << endl;
-        cin >> reg.email;
-        cout << "PLEAESE ENTER PHONE NUMBER ?" << endl;
-        cin >> reg.phone_number;
+    cout << "PLEASE ENTER YOUR FIRST NAME?" << endl;
+    cin >> person.first_name;
+    cout << "PLEASE ENTER YOUR SECOND NAME?" << endl;
+    cin >> person.second_name;
+    cout << "PLEAE ENTER YOUR EMAIL ?" << endl;
+    cin >> person.email;
+    cout << "PLEAESE ENTER PHONE NUMBER ?" << endl;
+    cin >> person.phone_number;
+
+    get_user_info(person);
+
    
    
     MYSQL* conn;
