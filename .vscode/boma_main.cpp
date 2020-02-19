@@ -24,10 +24,14 @@ int qstate;
 
 int main()
 {
+    
+    user_registration person;
     char pass[20];
     char password[20];
+// diplsays welcoming note to the user
+void f_welcome_note();
 
-      user_registration person;
+      
 
     cout << "PLEASE ENTER YOUR FIRST NAME?" << endl;
     cin >> person.first_name;
@@ -44,52 +48,62 @@ int main()
 
     cout<<"Please input password again to preoceed"<<endl;
     cin>>password;
+
+
     
-    pin_verification(pass,password);
-
-    get_user_info(person);
-
-
-   
-   
-    MYSQL* conn;
-    MYSQL_ROW row;
-    MYSQL_RES* res;
-    conn = mysql_init(0);
-
-    conn = mysql_real_connect(conn, "localhost", "root", "Dennis001", "m_boma_project", 3306, NULL, 0);
     
-    if (conn)
-    { 
-        puts("successful connection to database !*");       
-      
-        if (!qstate)
+    
+//displaying entered information about tyhe user
+    
+        while (1)
         {
-            
-            string query = "INSERT INTO user_info(first_name,second_name,email,phone_number) VALUES ( '" + reg.first_name + "','" + reg.second_name + "','" + reg.email + "','" + reg.phone_number + "')";
-            const char* q = query.c_str();
-            qstate = mysql_query(conn, q);
-            if (qstate != 0)
+            /* code */
+            switch (current)
             {
-                cout << mysql_error(conn) << endl;
-                return 1;
+            case /* constant-expression */ACCOUNT_CREATION:
+            /*registering to daata base
+this icludes the entered name,email,hpone _number etc
+*/
+            void f_register_to_database(person.first_name,person.second_name,person.email,person.phone_number);
+            disp_user_info(person);
+
+             current = PASSWORD_VERIFICATION;
+                /* code */
+                break;
+
+
+                case PASSWORD_VERIFICATION:
+                pin_verification(pass,password);
+                break;
+
+                case TOWN_DISPLAY:
+                break;
+
+                case HOUSE_TYPE_DISPLAY:
+                break;
+
+                case MODE_OF_PAYMENT:
+                break;
+
+                case ISSUANCE_OF_RECIPT:
+                break;
+
+            
+            
+            default:
+            cout<<"Unknow error"endl;
+                break;
             }
         }
-        else
-        {
-            cout << "Querry failed: " << mysql_error(conn) << endl;
-        }
-
-    }
-
-    else
-    {
-        puts("connection to database has failed!*");
-    }
-
-    return 0;
+        
 
 }
+
+
+
+   
+   
+   
 
 
 
