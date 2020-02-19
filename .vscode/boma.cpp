@@ -139,6 +139,7 @@ void f_display_town()
                  printf("%s   %s \n", row[0],row[1]);
             }
         }
+        
         else
         {
             cout << "Querry failed: " << mysql_error(conn) << endl;

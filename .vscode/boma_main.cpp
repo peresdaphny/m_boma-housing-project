@@ -19,9 +19,6 @@
 
 using namespace std;
 
-int qstate;
- 
-
 int main()
 {
     
